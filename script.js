@@ -6,7 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             const nome = document.getElementById('nome').value;
-            alert(`Obrigado pelo contato, ${nome}! Entraremos em contato em breve.`);
+            const whatsapp = document.getElementById('whatsapp').value;
+            const interesse = document.getElementById('interesse').value;
+
+            const mensagem = `Olá Keila! 👋\n\nMeu nome é *${nome}*.\nMeu WhatsApp é: ${whatsapp}\nTenho interesse em: *${interesse}*\n\nGostaria de mais informações!`;
+
+            const numeroKeila = '5599999999999'; // ⚠️ Substitua pelo número real
+            const url = `https://wa.me/${numeroKeila}?text=${encodeURIComponent(mensagem)}`;
+            window.open(url, '_blank');
             form.reset();
         });
     }
