@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const mensagem = `Olá Keila! 👋\n\nMeu nome é *${nome}*.\nMeu WhatsApp é: ${whatsapp}\nTenho interesse em: *${interesse}*\n\nGostaria de mais informações!`;
 
-            const numeroKeila = '5599999999999'; // ⚠️ Substitua pelo número real
+            const numeroKeila = '5593811549008';
             const url = `https://wa.me/${numeroKeila}?text=${encodeURIComponent(mensagem)}`;
             window.open(url, '_blank');
             form.reset();
